@@ -13,26 +13,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#2C302E]">
-    <header class="bg-[#151716]">
+    <header class="sticky z-50 top-0 bg-[#151716]">
         <div class="flex justify-between items-center w-[92%] mx-auto">
             <div>
                 <img class="w-20" src="./tl assets/taglogo.png" alt="Logo">
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="Home"></a>
+            <div class="md:static absolute bg-[#151716] text-lg text-[#A3A8A3] md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li class="hover:text-white hover:scale-105">
+                        <a href="#">Home</a>
                     </li>
-                    <li>
-                        <a href="About Us"></a>
+                    <li class="hover:text-white hover:scale-105">
+                        <a href="#">About Us</a>
                     </li>
-                    <li>
-                        <a href="Contacts"></a>
+                    <li class="hover:text-white hover:scale-105">
+                        <a href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#A3A8A3" class="bi bi-list" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#A3A8A3" class="bi bi-list hover:text-white" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                   </svg>
             </div>
@@ -40,4 +40,7 @@
     </header>
     
 </body>
+<script>
+
+</script>
 </html>
