@@ -21,7 +21,7 @@
             <div id="dropdown" class="hidden absolute top-full left-0 bg-[#151716] w-full text-lg text-[#A3A8A3]">
                 <ul class="flex flex-col items-center py-4">
                     <li class="my-2 hover:text-white duration-500 hover:scale-105 hover:font-semibold">
-                        <a href="#section1">About Us</a>
+                        <a href="#section1">About Us</a>  
                     </li>
                     <li class="my-2 hover:text-white duration-500 hover:scale-105 hover:font-semibold">
                         <a href="#section2">What We Do</a>
@@ -52,13 +52,34 @@
         <img class="backdrop-blur-sm lg:h-[700px]" src="./tl assets/taglogoG-adj.png" alt="logo">  
     </div>
 
-    <section id="section1" class="h-screen flex items-center justify-center bg-[#2C302E]">
-        <h2 class="text-white text-4xl">About Us</h2>
-    </section>
-    
-    <section id="section2" class="h-screen flex items-center justify-center bg-[#151716]">
-        <h2 class="text-white text-4xl">What We do</h2>
-    </section>
+    <section id="section1" class="h-screen flex flex-col justify-center items-center bg-[#151716] px-6 lg:px-20">
+        <div class="text-center">
+          <h2 class="text-3xl lg:text-4xl font-semibold text-[#A3A8A3] mb-10 lg:mb-14 transition-transform duration-700 transform hover:scale-105">
+            Welcome to Tagline Tattoo Studio, home of the best tattoos and unforgettable artistic experiences!
+          </h2>
+          <div class="max-w-4xl mx-auto text-[#A3A8A3] leading-relaxed space-y-6 text-lg lg:text-xl fade-in-on-scroll overflow-y-auto h-[70%]">
+            <p>
+              At Tagline Tattoo Studio, we believe tattoos are more than just ink on skin — they are personal stories, expressions of individuality, and powerful symbols of transformation.
+            </p>
+            <p>
+              We take pride in following best practices to ensure a clean, safe, and comfortable environment for every client.
+            </p>
+            <p>
+              Creativity is at the heart of everything we do, and our love for art shines through in every tattoo we create.
+            </p>
+            <p>
+              Our legacy is built on the smiles and satisfaction of our clients. Every piece we design is more than just body art; it's a reflection of your identity and a celebration of creativity.
+            </p>
+            <p>
+              At Tagline Tattoo Studio, we're more than just your regular tattoo shop. We can’t wait to work with you to bring your next masterpiece to life!
+            </p>
+          </div>
+          <div class="mt-10">
+            <a href="#contact" class="bg-[#A3A8A3] text-[#2C302E] px-6 py-3 rounded-full text-lg font-medium hover:bg-opacity-80 transition-all duration-300">Contact Us</a>
+          </div>
+        </div>
+      </section>
+     
     
     <section id="section3" class="h-screen flex flex-col items-center justify-center bg-[#2C302E]">
         <h2 class="text-white text-4xl m-8">SkinArt Gallery</h2>
@@ -78,7 +99,8 @@
                 <div class="w-full h-64 flex items-center justify-center overflow-hidden mb-4">
                     <img src="./gallery/sleeves/WhatsApp Image 2024-09-25 at 19.34.16_aa3a95c5.jpg" alt="Landscape Art" class="w-full h-full object-cover">
                 </div>
-                <h3 class="text-lg font-semibold text-[#A3A8A3]">Sleeves</h3>
+                <h3 class="text-xl font-semibold text-[#daa520] mb-4">Sleeves</h3>
+                <p class="text-sm text-[#A3A8A3] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
             </div>
     
             <!-- Card 3 -->
@@ -86,7 +108,8 @@
                 <div class="w-full h-64 flex items-center justify-center overflow-hidden mb-4">
                     <img src="./gallery/randoms/WhatsApp Image 2024-09-25 at 19.34.17_069c6495.jpg" alt="Portrait Art" class="w-full h-full object-cover">
                 </div>
-                <h3 class="text-lg font-semibold text-[#A3A8A3]">Randoms</h3>
+                <h3 class="text-xl font-semibold text-[#daa520] mb-4">Randoms</h3>
+                <p class="text-sm text-[#A3A8A3] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
             </div>
     
             <!-- Card 4 -->
@@ -94,12 +117,12 @@
                 <div class="w-full h-64 flex items-center justify-center overflow-hidden mb-4">
                     <img src="./gallery/randoms/WhatsApp Image 2024-09-25 at 19.34.17_173a75bc.jpg" alt="Modern Art" class="w-full h-full object-cover">
                 </div>
-                <h3 class="text-lg font-semibold text-[#A3A8A3]">Clips</h3>
+                <h3 class="text-xl font-semibold text-[#daa520] mb-4">Clips</h3>
+                <p class="text-sm text-[#A3A8A3] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
             </div>
         </section>
     </section>
         
-    
     
     <section id="section4" class="h-screen bg-[#151716] flex items-center justify-center">
         <div class="grid grid-cols-4 gap-4 w-[92%] mx-auto items-center text-white">
@@ -225,6 +248,22 @@
         </div>
     </div>
 
+    <style>
+        /* Animation for text fade-in on scroll */
+        .fade-in-on-scroll {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-on-scroll.is-visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+          /* Ensure overflow is handled */
+        #section1 {
+            overflow: hidden; /* Prevents overflow from affecting layout */}
+    </style>
 
     <script>
         document.getElementById('hamburger').addEventListener('click', function() {
@@ -238,6 +277,20 @@
             link.addEventListener('click', function() {
                 document.getElementById('dropdown').classList.add('hidden');
             });
+        });
+    </script>
+
+
+    <script>
+        // JavaScript for adding animation class on scroll
+        window.addEventListener('scroll', function() {
+        const fadeElements = document.querySelectorAll('.fade-in-on-scroll');
+        fadeElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= window.innerHeight) {
+            el.classList.add('is-visible');
+            }
+        });
         });
     </script>
 </body>
